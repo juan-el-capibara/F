@@ -591,7 +591,7 @@ main .btn-send:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
 	#content {
 		position: relative;
 		width: calc(100% - 60px);
@@ -602,35 +602,71 @@ main .btn-send:hover {
 		display: none;
 	}
 }
+
+
+
+.content_1 {
+    display: grid;
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .productos{
 	width: 20%;
 
 }
 
 .grid_1{
-	display: flex;
+	
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr  1fr;
 	width: 100%;
-	padding: 20px;
-	margin: 0 auto;
+	padding: 10px;
+	justify-content: center;
 
 }
+
+
 .content_1{
-	display: flex;
-	display: grid;
-	align-items: center;
-	margin: 0 auto;
-	grid-template-rows: 1fr 1fr;
-	border: 10px ridge black;
-	text-align: center;
 
+	display: grid;
+
+	margin: 0 auto;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0);
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
 
 
 }
+
 .img_ca{
 	width: 100%;
+	transition: all 0.3s ease;
+	border-radius: 10px;
 }
+.img_ca:hover{
+		transform: scale(0.9);
+}
+
+button{
+
+    border: none;
+	background-color: skyblue;
+	color: white;
+	transition: all 0.3s ease;
+	border-radius: 20px;
+}
+button:hover{
+    background-color: white;
+	color: blue;
+	transform: scale(0.9);
+}
+
+
 
 
 /*PRODUCTOS*/
@@ -742,7 +778,7 @@ main .btn-send:hover {
         background-color: wheat;
         margin: 0 auto; 
         padding: 10px;
-        overflow:hidden;
+        overflow:scroll;
     }
     .containerimages{
         display: grid;
@@ -783,4 +819,11 @@ main .btn-send:hover {
         overflow: hidden;
     }
     
+}
+@media screen and (max-width: 650px) {	
+	.grid_1{
+		display: grid;
+		grid-row: 1fr ;
+		grid-template-columns: 1fr;
+	}
 }
